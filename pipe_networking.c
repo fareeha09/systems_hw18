@@ -60,6 +60,7 @@ int client_handshake(int *to_server) {
 	printf("[Client] created privated pipe (downstream fifo)\n");
 	write(up, message, HANDSHAKE_BUFFER_SIZE);
 	printf("[Client] sent name of private pipe to server \n");
+	
 	//client receives message from server
 	//then sends back message that he received it
 	printf("[Client] message 'HOLA' received.. sending 'HOLA' back \n");
